@@ -222,7 +222,19 @@ h1 {
 
 /* Nuestros Clientes Page - Styles End */
 
+/* Acerca de Nosotros - Styles Start */
 
+.nosotros__main {
+    color: var(--bs-light);
+}
+
+.nosotros-section {
+    color: var(--bs-light);
+}
+
+.staff-foto {
+    width: 100%;
+}
 
 /* footer */
 .footer {
