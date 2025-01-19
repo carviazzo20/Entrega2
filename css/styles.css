@@ -137,6 +137,10 @@ h1 {
     background-color: var(--dark-light);
 }
 
+.section {
+    background-colo: var(--black);
+    color: var(--bs-light);
+}
 
 .btn-orange {
     background-color: var(--orange);
