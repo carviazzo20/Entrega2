@@ -192,6 +192,7 @@ h1 {
 
 .nuestros-servicios__img {
     max-width: 600px;
+    margin: auto;
 }
 
 /* Nuestros Servicios Page - Styles End */
@@ -213,7 +214,7 @@ h1 {
 }
 
 .testimony-container {
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
 }
 
 .nuestros-clientes-logo {
@@ -234,6 +235,10 @@ h1 {
 
 .nosotros-section {
     color: var(--bs-light);
+}
+
+.presentation-container {
+    margin: 0 auto 2rem auto;
 }
 
 .staff-foto {
