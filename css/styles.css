@@ -321,7 +321,10 @@ h1 {
     color: var(--bs-light);
 }
 
-.hablemos-section
+.hablemos-section {
+    color: var(--bs-light);
+    background-color: var(--black);
+}
 
 /* Hablemos - Styles Start */
 
