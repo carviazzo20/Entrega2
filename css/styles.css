@@ -186,11 +186,43 @@ h1 {
     color: var(--bs-light);
 }
 
-.nuestros-servicios-section .nuestros-servicios__img {
+.nuestros-servicios__img {
     max-width: 600px;
 }
 
 /* Nuestros Servicios Page - Styles End */
+
+/* Nuestros Clientes Page - Styles Start */
+
+.nuestros-clientes__main {
+    background-color: var(--black);
+    color: var(--bs-light);
+}
+
+.nuestros-clientes-section {
+    color: var(--bs-light);
+    background-color: var(--black);
+}
+
+.nuestros-clientes-section__width {
+    max-width: 992px;
+}
+
+.testimony-container {
+    margin-bottom: 2rem;
+}
+
+.nuestros-clientes-logo {
+    width: 100%;
+}
+
+.nuestros-clientes-logo-redondo {
+    width: calc(100%*0.8);
+}
+
+/* Nuestros Clientes Page - Styles End */
+
+
 
 /* footer */
 .footer {
@@ -233,6 +265,14 @@ h1 {
     
     .nuestros-servicios-section .nuestros-servicios__img {
         max-width: 300px;
+    }
+
+    .nuestros-clientes-logo {
+        width: 40%;
+    }  
+
+    .nuestros-clientes-logo-redondo {
+        width: calc(40%*0.8);
     }
 }
 
