@@ -1,0 +1,271 @@
+:root {
+    --black: #000;
+    --orange: #ffa500;
+    --dark: #252422;
+    --dark-light: rgba(37, 36, 34, 0.6);
+}
+
+/* Reseting */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Home Page */
+
+body {
+    background-color: var(--black);
+    min-height: 100vh;
+}
+
+.header * {
+    color: var(--text-white);
+}
+
+header .logo {
+    width: 3rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.menu-icon {
+    font-size: 2rem;
+}
+
+.menu-icon:hover, .menu-button:hover {
+    color: var(--orange) !important;
+}
+
+.offcanvas {
+    background-color: var(--dark);
+}
+
+.close-btn {
+    font-size: 2.5rem;
+    position: absolute;
+    right: 0.5rem;
+}
+
+.close-btn:hover {
+    font-weight: bolder;
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.nav-link:hover {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.active {
+    font-weight: bold;
+    color: var(--orange) !important;
+}
+
+/* Overlay */
+
+.welcome-home {
+    position: relative;
+    height: calc(100vh - 74px);
+    overflow: hidden;
+}
+
+.main__bg-video {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-30%);
+    z-index: -100;
+}
+
+.welcome-home__content {
+    position: absolute;
+    top: 1rem;
+    width: 100vw;
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.video_contain {
+    height: calc(100vh - 74px);
+}
+
+.scroll-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--bs-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.scroll-btn:hover {
+    color: var(--bs-light);
+    opacity: 0.8;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: var(--dark-light);
+}
+
+
+.btn-orange {
+    background-color: var(--orange);
+    color: var(--bs-light);
+}
+
+.btn-orange:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+.general-btn a {
+    font-size: 1.2em;
+}
+
+.nuestros-servicios-home__text {
+    color: var(--bs-light);
+}
+
+.logo-marca-home {
+    height: 8rem;
+}
+
+/* Nuestros Servicios Page - Styles Start */
+.full-width {
+    width: 100%;
+}
+
+.nuestros-servicios__team-work {
+    max-height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.nuestros-servicios__main {
+    background-color: var(--black);
+    color: var(--bs-light);
+}
+
+.max-width-page {
+    max-width: 1200px;
+}
+
+.nuestros-servicios-section {
+    background-color: var(--black);
+    color: var(--bs-light);
+}
+
+.nuestros-servicios-section .nuestros-servicios__img {
+    max-width: 600px;
+}
+
+/* Nuestros Servicios Page - Styles End */
+
+/* footer */
+.footer {
+    background-color: var(--bs-light);
+    color: var(--dark);
+}
+
+.footer .logo {
+    width: 4rem;
+}
+
+.footer .logo-and-brand {
+    font-size: 1.5rem;
+}
+
+.footer .social-media {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-media a {
+    color: var(--dark);
+}
+
+.social-media a:hover {
+    color: var(--orange);
+}
+
+/* Medias Queries */
+
+@media screen and (max-width:576px) {
+    .logo-marca-home {
+        height: 6.5rem;
+    }
+
+    /* Marketing Page */
+    .nuestros-servicios-section .row {
+        margin: auto;
+    }
+    
+    .nuestros-servicios-section .nuestros-servicios__img {
+        max-width: 300px;
+    }
+}
+
+/* median according to bootstrap5's md breakpoint */
+@media only screen and (min-width:768px) and (min-height: 700px) {
+    .section-home {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .carousel {
+        height: 500px;
+        width: 820px;
+    }
+
+    .carousel img {
+        height: 500px;
+        width: 820px;
+    }
+}
+
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+.footer *::selection {
+    background-color: var(--dark);
+    color: var(--bs-light);
+}
+
+.orange::selection {
+    color: var(--orange);
+}
