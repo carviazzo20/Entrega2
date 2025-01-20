@@ -5,19 +5,61 @@
     --dark-light: rgba(37, 36, 34, 0.6);
 }
 
-/* Reseting */
+/* Reseteo */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Home Page */
+/* Conf Generales Empieza */
 
 body {
     background-color: var(--black);
     min-height: 100vh;
 }
+
+.section {
+    background-color: var(--black);
+    color: var(--bs-light);
+}
+
+.main {
+    background-color: var(--black);
+    color: var(--bs-light);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.orange {
+    color: var(--orange);
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    color: var(--bs-light);
+}
+
+.btn-orange:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+.general-btn a {
+    font-size: 1.2em;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Conf Generales Termina */
+
+/* Header Empieza */
 
 .header * {
     color: var(--text-white);
@@ -70,7 +112,39 @@ header .logo {
     color: var(--orange) !important;
 }
 
-/* Overlay */
+/* Header Termina */
+
+/* Footer Empieza */
+
+.footer {
+    background-color: var(--bs-light);
+    color: var(--dark);
+}
+
+.footer .logo {
+    width: 4rem;
+}
+
+.footer .logo-and-brand {
+    font-size: 1.5rem;
+}
+
+.footer .social-media {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer .social-media a {
+    color: var(--dark);
+}
+
+.footer .social-media a:hover {
+    color: var(--orange);
+}
+
+/* Footer Termina */
+
+/* Home Página Empieza */
 
 .welcome-home {
     position: relative;
@@ -97,14 +171,6 @@ header .logo {
     z-index: 1;
     color: white;
     text-align: center;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-.orange {
-    color: var(--orange);
 }
 
 .video_contain {
@@ -137,38 +203,13 @@ h1 {
     background-color: var(--dark-light);
 }
 
-.section {
-    background-color: var(--black);
-    color: var(--bs-light);
-}
-
-.btn-orange {
-    background-color: var(--orange);
-    color: var(--bs-light);
-}
-
-.btn-orange:hover {
-    border: 1px solid var(--orange);
-    background-color: var(--black);
-    color: var(--orange);
-}
-
-.general-btn a {
-    font-size: 1.2em;
-}
-
-.nuestros-servicios-home__text {
-    color: var(--bs-light);
-}
-
 .logo-marca-home {
     height: 8rem;
 }
 
-/* Nuestros Servicios Page - Styles Start */
-.full-width {
-    width: 100%;
-}
+/* Home Página Termina */
+
+/* Nuestros Servicios Página Empieza */
 
 .nuestros-servicios__team-work {
     max-height: 450px;
@@ -195,19 +236,9 @@ h1 {
     margin: auto;
 }
 
-/* Nuestros Servicios Page - Styles End */
+/* Nuestros Servicios Página Termina */
 
-/* Nuestros Clientes Page - Styles Start */
-
-.nuestros-clientes__main {
-    background-color: var(--black);
-    color: var(--bs-light);
-}
-
-.nuestros-clientes-section {
-    color: var(--bs-light);
-    background-color: var(--black);
-}
+/* Nuestros Clientes Página Empieza */
 
 .nuestros-clientes-section__width {
     max-width: 992px;
@@ -225,17 +256,9 @@ h1 {
     width: calc(100%*0.8);
 }
 
-/* Nuestros Clientes Page - Styles End */
+/* Nuestros Clientes Página Termina */
 
-/* Acerca de Nosotros - Styles Start */
-
-.nosotros__main {
-    color: var(--bs-light);
-}
-
-.nosotros-section {
-    color: var(--bs-light);
-}
+/* Acerca de Nosotros Página Empieza */
 
 .presentation-container {
     margin: 0 auto 2rem auto;
@@ -245,10 +268,11 @@ h1 {
     width: 100%;
 }
 
-/* hablemos */
+/* Acerca de Nosotros Página Termina */
+
+/* Hablemos Empieza */
 
 .hablemos-section {
-    color: var(--bs-light);
     text-align: left !important;
 }
 
@@ -291,49 +315,9 @@ h1 {
     padding-right: 0.5rem;
 }
 
-/* footer */
-.footer {
-    background-color: var(--bs-light);
-    color: var(--dark);
-}
+/* Hablemos Termina */
 
-.footer .logo {
-    width: 4rem;
-}
-
-.footer .logo-and-brand {
-    font-size: 1.5rem;
-}
-
-.footer .social-media {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.social-media a {
-    color: var(--dark);
-}
-
-.social-media a:hover {
-    color: var(--orange);
-}
-
-/* Acerca de Nosotros - Styles End */
-
-/* Hablemos - Styles Start */
-
-.hablemos__main {
-    color: var(--bs-light);
-}
-
-.hablemos-section {
-    color: var(--bs-light);
-    background-color: var(--black);
-}
-
-/* Hablemos - Styles Start */
-
-/* Medias Queries */
+/* Medias Queries Empieza */
 
 @media screen and (max-width:576px) {
     .logo-marca-home {
@@ -358,7 +342,6 @@ h1 {
     }
 }
 
-/* median according to bootstrap5's md breakpoint */
 @media only screen and (min-width:768px) and (min-height: 700px) {
     .section-home {
         height: 100vh;
@@ -377,6 +360,9 @@ h1 {
     }
 }
 
+/* Medias Queries Termina */
+
+/* Pseudo-elementos Empieza */
 
 ::selection {
     background-color: white;
@@ -391,3 +377,5 @@ h1 {
 .orange::selection {
     color: var(--orange);
 }
+
+/* Pseudo-elementos Terimina */
