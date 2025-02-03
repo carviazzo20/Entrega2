@@ -1,381 +1,324 @@
-:root {
-    --black: #000;
-    --orange: #ffa500;
-    --dark: #252422;
-    --dark-light: rgba(37, 36, 34, 0.6);
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* Reseteo */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+  --black: #000;
+  --orange: #ffa500;
+  --dark: #252422;
+  --dark-light: rgba(37, 36, 34, 0.6);
 }
 
 /* Conf Generales Empieza */
-
 body {
-    background-color: var(--black);
-    min-height: 100vh;
+  background-color: #000;
+  min-height: 100vh;
 }
 
+.main,
 .section {
-    background-color: var(--black);
-    color: var(--bs-light);
-}
-
-.main {
-    background-color: var(--black);
-    color: var(--bs-light);
+  background-color: #000;
+  color: #f8f9fa;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .orange {
-    color: var(--orange);
+  color: #ffa500;
 }
-
-.btn-orange {
-    background-color: var(--orange);
-    color: var(--bs-light);
-}
-
-.btn-orange:hover {
-    border: 1px solid var(--orange);
-    background-color: var(--black);
-    color: var(--orange);
-}
-
-.general-btn a {
-    font-size: 1.2em;
-}
-
-.full-width {
-    width: 100%;
-}
-
-/* Conf Generales Termina */
-
-/* Header Empieza */
-
-.header * {
-    color: var(--text-white);
-}
-
-header .logo {
-    width: 3rem;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-}
-
-.navbar-brand:hover {
-    font-weight: bold;
-    color: var(--orange);
-}
-
-.menu-icon {
-    font-size: 2rem;
-}
-
-.menu-icon:hover, .menu-button:hover {
-    color: var(--orange) !important;
-}
-
-.offcanvas {
-    background-color: var(--dark);
-}
-
-.close-btn {
-    font-size: 2.5rem;
-    position: absolute;
-    right: 0.5rem;
-}
-
-.close-btn:hover {
-    font-weight: bolder;
-    cursor: pointer;
-    color: var(--orange);
-}
-
-.nav-link:hover {
-    color: var(--orange);
-    font-weight: bold;
-}
-
-.active {
-    font-weight: bold;
-    color: var(--orange) !important;
-}
-
-/* Header Termina */
-
-/* Footer Empieza */
-
-.footer {
-    background-color: var(--bs-light);
-    color: var(--dark);
-}
-
-.footer .logo {
-    width: 4rem;
-}
-
-.footer .logo-and-brand {
-    font-size: 1.5rem;
-}
-
-.footer .social-media {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.footer .social-media a {
-    color: var(--dark);
-}
-
-.footer .social-media a:hover {
-    color: var(--orange);
-}
-
-/* Footer Termina */
-
-/* Home Página Empieza */
-
-.welcome-home {
-    position: relative;
-    height: calc(100vh - 74px);
-    overflow: hidden;
-}
-
-.main__bg-video {
-    position: relative;
-    top: 30%;
-    left: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
-    height: auto;
-    transform: translateX(-50%) translateY(-30%);
-    z-index: -100;
-}
-
-.welcome-home__content {
-    position: absolute;
-    top: 1rem;
-    width: 100vw;
-    z-index: 1;
-    color: white;
-    text-align: center;
-}
-
-.video_contain {
-    height: calc(100vh - 74px);
-}
-
-.scroll-btn {
-    position: absolute;
-    left: 50%;
-    bottom: 30px;
-    transform: translateX(-50%);
-    z-index: 1;
-    color: var(--bs-light);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-}
-
-.scroll-btn:hover {
-    color: var(--bs-light);
-    opacity: 0.8;
-}
-
-.carousel-item img {
-    object-fit: cover;
-}
-
-.carousel-caption {
-    background-color: var(--dark-light);
-}
-
-.logo-marca-home {
-    height: 8rem;
-}
-
-/* Home Página Termina */
-
-/* Nuestros Servicios Página Empieza */
-
-.nuestros-servicios__team-work {
-    max-height: 450px;
-    object-fit: cover;
-    object-position: top;
-}
-
-.nuestros-servicios__main {
-    background-color: var(--black);
-    color: var(--bs-light);
-}
-
-.max-width-page {
-    max-width: 1200px;
-}
-
-.nuestros-servicios-section {
-    background-color: var(--black);
-    color: var(--bs-light);
-}
-
-.nuestros-servicios__img {
-    max-width: 600px;
-    margin: auto;
-}
-
-/* Nuestros Servicios Página Termina */
-
-/* Nuestros Clientes Página Empieza */
-
-.nuestros-clientes-section__width {
-    max-width: 992px;
-}
-
-.testimony-container {
-    margin: 0 auto 2rem auto;
-}
-
-.nuestros-clientes-logo {
-    width: 100%;
-}
-
-.nuestros-clientes-logo-redondo {
-    width: calc(100%*0.8);
-}
-
-/* Nuestros Clientes Página Termina */
-
-/* Acerca de Nosotros Página Empieza */
-
-.presentation-container {
-    margin: 0 auto 2rem auto;
-}
-
-.staff-foto {
-    width: 100%;
-}
-
-/* Acerca de Nosotros Página Termina */
-
-/* Hablemos Empieza */
-
-.hablemos-section {
-    text-align: left !important;
-}
-
-.form {
-    padding: 0 2rem;
-}
-
-.form-control:focus {
-    border-color: var(--orange);
-    box-shadow: inset 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075), 0 0 8px var(--orange);
-  }
-
-.form-label {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.textarea {
-    resize: none;
-}
-
-.nuestras-redes__width {
-    max-width: 800px;
-}
-
-.redes-container a {
-    color: var(--bs-light);
-    text-decoration: none;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-}
-
-.redes-container a:hover {
-    color: var(--orange);
-}
-
-.redes-container a .bi {
-    font-size: 1.8rem;
-    padding-right: 0.5rem;
-}
-
-/* Hablemos Termina */
-
-/* Medias Queries Empieza */
-
-@media screen and (max-width:576px) {
-    .logo-marca-home {
-        height: 6.5rem;
-    }
-
-    /* Marketing Page */
-    .nuestros-servicios-section .row {
-        margin: auto;
-    }
-    
-    .nuestros-servicios-section .nuestros-servicios__img {
-        max-width: 300px;
-    }
-
-    .nuestros-clientes-logo {
-        width: 40%;
-    }  
-
-    .nuestros-clientes-logo-redondo {
-        width: calc(40%*0.8);
-    }
-}
-
-@media only screen and (min-width:768px) and (min-height: 700px) {
-    .section-home {
-        height: 100vh;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .carousel {
-        height: 500px;
-        width: 820px;
-    }
-
-    .carousel img {
-        height: 500px;
-        width: 820px;
-    }
-}
-
-/* Medias Queries Termina */
-
-/* Pseudo-elementos Empieza */
 
 ::selection {
-    background-color: white;
-    color: black;
-}
-
-.footer *::selection {
-    background-color: var(--dark);
-    color: var(--bs-light);
+  background-color: #fff;
+  color: #000;
 }
 
 .orange::selection {
-    color: var(--orange);
+  color: #ffa500;
 }
 
-/* Pseudo-elementos Terimina */
+.btn-orange {
+  background-color: #ffa500;
+  color: #000;
+}
+
+.btn-orange:hover {
+  border: 1px solid #ffa500;
+  background-color: #000;
+  color: #ffa500;
+}
+
+.general-btn a {
+  font-size: 1.2em;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.max-width-page {
+  max-width: 1200px;
+}
+
+/* Conf Generales Termina */
+/* Header Empieza */
+.header * {
+  color: #f8f9fa;
+}
+.header .logo {
+  width: 3rem;
+}
+.header .navbar-brand {
+  font-size: 1.5rem;
+}
+.header .navbar-brand:hover {
+  font-weight: bold;
+  color: #ffa500;
+}
+.header .menu-icon {
+  font-size: 2rem;
+}
+.header .menu-icon:hover,
+.header .menu-button:hover {
+  color: #ffa500 !important;
+}
+.header .offcanvas {
+  background-color: #252422;
+}
+.header .close-btn {
+  font-size: 2.5rem;
+  position: absolute;
+  right: 0.5rem;
+}
+.header .close-btn:hover {
+  font-weight: bolder;
+  cursor: pointer;
+  color: #ffa500;
+}
+.header .nav-link:hover {
+  color: #ffa500;
+  font-weight: bold;
+}
+.header .active {
+  font-weight: bold;
+  color: #ffa500 !important;
+}
+
+/* Header Termina */
+/* Footer Empieza */
+.footer {
+  background-color: #f8f9fa;
+  color: #252422;
+}
+.footer .logo-and-brand {
+  font-size: 1.5rem;
+}
+.footer .logo-and-brand .logo {
+  width: 4rem;
+}
+.footer .social-media {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer .social-media a {
+  color: #252422;
+}
+.footer .social-media a :hover {
+  color: #ffa500;
+}
+.footer ::selection {
+  background-color: #252422;
+  color: #f8f9fa;
+}
+.footer .orange::selection {
+  color: #ffa500;
+}
+
+/* Footer Termina */
+/* Home Página Empieza */
+.welcome-home {
+  position: relative;
+  height: calc(100vh - 74px);
+  overflow: hidden;
+}
+.welcome-home .main__bg-video {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-30%);
+  z-index: -100;
+}
+.welcome-home .welcome-home__content {
+  position: absolute;
+  top: 1rem;
+  width: 100vw;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+.welcome-home .scroll-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.welcome-home .scroll-btn:hover {
+  opacity: 0.8;
+}
+
+.nuestros-servicios-home .carousel .carousel-item img {
+  object-fit: cover;
+}
+.nuestros-servicios-home .carousel .carousel-item .carousel-caption {
+  background-color: rgba(37, 36, 34, 0.6);
+}
+
+.nuestros-clientes-home .logo-marca-home {
+  height: 8rem;
+}
+
+/* Home Página Termina */
+/* Nuestros Servicios Página Empieza */
+.nuestros-servicios__team-work {
+  max-height: 450px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.nuestros-servicios__main {
+  background-color: #000;
+  color: #f8f9fa;
+}
+
+.nuestros-servicios-section {
+  background-color: #000;
+  color: #f8f9fa;
+}
+
+.nuestros-servicios__img {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Nuestros Servicios Página Termina */
+/* Nuestros Clientes Página Empieza */
+.nuestros-clientes-section__width {
+  max-width: 992px;
+}
+
+.testimony-container {
+  margin: 0 auto 2rem auto;
+}
+.testimony-container .nuestros-clientes-logo {
+  width: 100%;
+}
+.testimony-container .nuestros-clientes-logo-redondo {
+  width: 80%;
+}
+
+.testimony-container:last-child {
+  margin: 0 auto;
+}
+
+/* Nuestros Clientes Página Termina */
+/* Acerca de Nosotros Página Empieza */
+.presentation-container {
+  margin: 0 auto 2rem auto;
+}
+
+.staff-foto {
+  width: 100%;
+}
+
+/* Acerca de Nosotros Página Termina */
+/* Hablemos Empieza */
+.hablemos-section {
+  text-align: left !important;
+}
+
+.form {
+  padding: 0 2rem;
+}
+.form .form-control:focus {
+  border-color: #ffa500;
+  box-shadow: inset 0 0.5rem 0.5rem rgba(0, 0, 0, 0.075), 0 0 8px var(--orange);
+}
+.form .form-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.form .textarea {
+  resize: none;
+}
+
+.nuestras-redes__width {
+  max-width: 800px;
+}
+
+.redes-container a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.redes-container a .bi {
+  font-size: 1.8rem;
+  padding-right: 0.5rem;
+}
+
+.redes-container a:hover {
+  color: #ffa500;
+}
+
+/* Hablemos Termina */
+/* Medias Queries Empieza */
+@media screen and (max-width: 576px) {
+  .logo-marca-home {
+    height: 6.5rem;
+  }
+  .nuestros-servicios-section .row {
+    margin: auto;
+  }
+  .nuestros-servicios-section .nuestros-servicios__img {
+    max-width: 300px;
+  }
+  .nuestros-clientes-section .nuestros-clientes-logo {
+    width: 40%;
+  }
+  .nuestros-clientes-section .nuestros-clientes-logo-redondo {
+    width: 32%;
+  }
+}
+@media only screen and (min-width: 768px) and (min-height: 700px) {
+  .section-home {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel {
+    height: 500px;
+    width: 820px;
+  }
+  .carousel img {
+    height: 500px;
+    width: 820px;
+  }
+}
+/* Medias Queries Termina */
+
+/*# sourceMappingURL=styles.css.map */
