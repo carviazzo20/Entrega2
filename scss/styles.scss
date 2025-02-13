@@ -273,6 +273,35 @@ h1 {
     margin: 0 auto;
 }
 
+.testimonios {
+
+    .carousel-item {
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .clientes-logo {
+        height: 40%;
+        width: 60%;
+        padding: 0.5rem;
+    }
+
+    .clientes-logo-redondo {
+        height: 40%;
+        width: 40%;
+        padding: 0.5rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        transform: translateY(-5rem);
+    }
+}
+
 
 /* Nuestros Clientes Página Termina */
 
@@ -280,11 +309,15 @@ h1 {
 
 .presentation-container {
     margin: 0 auto 2rem auto;
+
+    .img-container {
+        .staff-foto {
+            width: 100%;
+        }
+    }
 }
 
-.staff-foto {
-    width: 100%;
-}
+
 
 /* Acerca de Nosotros Página Termina */
 
@@ -352,16 +385,6 @@ h1 {
 
         .nuestros-servicios__img {
             max-width: 300px;
-        }
-    }
-
-    .nuestros-clientes-section {
-        .nuestros-clientes-logo {
-            width: 40%;
-        }  
-    
-        .nuestros-clientes-logo-redondo {
-            width: calc(40%*0.8);
         }
     }
 }
