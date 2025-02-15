@@ -1,0 +1,11 @@
+/* Animaciones Empieza */
+@keyframes up-down {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+@mixin up-down__animation {
+    position: relative;
+    animation: up-down 2s linear infinite;
+}

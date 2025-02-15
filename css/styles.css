@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+/* Animaciones Empieza */
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 :root {
   --black: #000;
   --orange: #ffa500;
@@ -178,6 +190,10 @@ h1 {
 }
 .welcome-home .scroll-btn:hover {
   opacity: 0.8;
+}
+.welcome-home .scroll-btn:hover .bi-arrow-down-short {
+  position: relative;
+  animation: up-down 2s linear infinite;
 }
 
 .nuestros-servicios-home .carousel .carousel-item img {
