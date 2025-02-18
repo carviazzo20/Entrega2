@@ -17,13 +17,6 @@
     transform: translateY(0);
   }
 }
-:root {
-  --black: #000;
-  --orange: #ffa500;
-  --dark: #252422;
-  --dark-light: rgba(37, 36, 34, 0.6);
-}
-
 /* Conf Generales Empieza */
 body {
   background-color: #000;
@@ -43,21 +36,19 @@ h1 {
 .orange {
   color: #ffa500;
 }
+.orange::selection {
+  color: #ffa500;
+}
 
 ::selection {
   background-color: #fff;
   color: #000;
 }
 
-.orange::selection {
-  color: #ffa500;
-}
-
 .btn-orange {
   background-color: #ffa500;
   color: #000;
 }
-
 .btn-orange:hover {
   border: 1px solid #ffa500;
   background-color: #000;
@@ -81,20 +72,22 @@ h1 {
 .header * {
   color: #f8f9fa;
 }
-.header .logo {
-  width: 3rem;
-}
 .header .navbar-brand {
   font-size: 1.5rem;
 }
-.header .navbar-brand:hover {
+.header .navbar-brand .logo {
+  width: 3rem;
+}
+.header .navbar-brand:hover span {
   font-weight: bold;
-  color: #ffa500;
+  color: #ffa500 !important;
 }
 .header .menu-icon {
   font-size: 2rem;
 }
-.header .menu-icon:hover,
+.header .menu-icon:hover {
+  color: #ffa500 !important;
+}
 .header .menu-button:hover {
   color: #ffa500 !important;
 }
@@ -140,13 +133,6 @@ h1 {
   color: #252422;
 }
 .footer .social-media a :hover {
-  color: #ffa500;
-}
-.footer ::selection {
-  background-color: #252422;
-  color: #f8f9fa;
-}
-.footer .orange::selection {
   color: #ffa500;
 }
 
@@ -209,8 +195,12 @@ h1 {
 
 /* Home Página Termina */
 /* Nuestros Servicios Página Empieza */
-.nuestros-servicios__team-work {
-  max-height: 450px;
+.full-width__img-container {
+  max-height: 550px;
+  overflow: hidden;
+}
+.full-width__img-container .full-width__img {
+  height: auto;
   object-fit: cover;
   object-position: top;
 }
@@ -318,7 +308,6 @@ h1 {
   font-size: 1.8rem;
   padding-right: 0.5rem;
 }
-
 .redes-container a:hover {
   color: #ffa500;
 }
