@@ -13,6 +13,10 @@
 ### Descarga y/o inserción de iconos
 - [Bootstrap Icons](https://icons.getbootstrap.com/)
 
+### Compresores de imágenes
+- **Compresor de videos:** [Free Convert Video Compressor](https://www.freeconvert.com/video-compressor)
+- **Compresor de imágenes:** [TinyPNG](https://tinypng.com/)
+
 ### Frameworks
 - **CSS Framework:** [Bootstrap 5](https://getbootstrap.com/)
 
@@ -20,12 +24,10 @@
 - [AOS](https://michalsnik.github.io/aos/)
 - [Animate.css](https://animate.style/)
 
-### Optimización de carga de archivos
-- **Compresor de videos:** [Free Convert Video Compressor](https://www.freeconvert.com/video-compressor)
-- **Compresor de imágenes:** [TinyPNG](https://tinypng.com/)
-
 ## Search Engine Optimization (SEO)
 Las estrategias de SEO se enfocaron en el **SEO on-page**:
 
 - Etiquetas *title*, *meta description* y *meta keywords* adaptadas al contendido de las cinco páginas del sitio web.
-- Optimización de carga de archivos.
+- Texto alternativo a las imágenes usando el atributo *alt* en las etiquetas *img*.
+- Organización de las etiquetas de encabezados (*headers*) respetando su jerarquía.
+- Optimización de carga de archivos mediante la compresión de archivos multimedia.
